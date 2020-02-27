@@ -2,10 +2,13 @@
 const express = require('express');
 const fs      = require('fs');
 const path    = require('path');
+const cors    = require('cors');
 
 
 const app     = express();
 app.use(express.static(path.join(__dirname, 'views')));
+app.use(cors());
+
 
 const showIndexFile = function (request, response){
     const html    = fs.readFileSync('./views/index.html', 'utf-8');

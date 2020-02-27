@@ -1,0 +1,10 @@
+[debug] [2020-02-27T17:32:03.409Z] ----------------------------------------------------------------------
+[debug] [2020-02-27T17:32:03.412Z] Command:       /home/gitpod/.nvm/versions/node/v10.19.0/bin/node /home/gitpod/.nvm/versions/node/v10.19.0/bin/firebase login
+[debug] [2020-02-27T17:32:03.413Z] CLI Version:   7.14.0
+[debug] [2020-02-27T17:32:03.413Z] Platform:      linux
+[debug] [2020-02-27T17:32:03.413Z] Node Version:  v10.19.0
+[debug] [2020-02-27T17:32:03.413Z] Time:          Thu Feb 27 2020 17:32:03 GMT+0000 (Coordinated Universal Time)
+[debug] [2020-02-27T17:32:03.413Z] ----------------------------------------------------------------------
+[debug] [2020-02-27T17:32:03.413Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+

@@ -21,18 +21,18 @@
 				<img src="img/tw.png">
 		 	</div>
 			<form id="login" class="input-group">
-			<input type="text" class="input-field" placeholder="UserId"required>
-				<input type="text" class="input-field" placeholder="Enter Password"required>
+			<input type="text" class="input-field" placeholder="UserId"required id="user-id-login">
+				<input type="text" class="input-field" placeholder="Enter Password"required id="password-login">
 				<input type="checkbox" class="check-box">
 				<span>Remember Password</span>
-				<button type="submit" class="submit-btn">Login</button>
+				<button type="submit" class="submit-btn" id="login-login">Login</button>
 			</form>
 			<form id="register" class="input-group">
-				<input type="text" class="input-field" placeholder="UserId"required>
-				<input type="email" class="input-field" placeholder="Email Id"required>
-				<input type="text" class="input-field" placeholder="Enter Password" required>
-				<input type="checkbox" class="check-box" ><span>agree to the terms & conditions</span>
-				<button type="submit" class="submit-btn">Register</button>
+				<input type="text" class="input-field" placeholder="UserId"required id="user-id-register">
+				<input type="email" class="input-field" placeholder="Email Id"required id="user-email-register">
+				<input type="text" class="input-field" placeholder="Enter Password" required id="password-register">
+				<input type="checkbox" class="check-box" id="agreeCheckBox"><span>agree to the terms & conditions</span>
+				<button type="submit" class="submit-btn" id="register-register">Register</button>
 			</form>
 			</div>
 			</div>
@@ -54,5 +54,7 @@
 				}
 
 				</script>
+
+                <script src="js/index.js"></script>
 </body>
 </html>
