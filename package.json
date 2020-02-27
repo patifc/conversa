@@ -1,0 +1,20 @@
+{
+  "name": "conversa",
+  "version": "1.0.0",
+  "description": "Main project Conversa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mon" : "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conversamainproject/conversa.git"
+  },
+  "author": "Patricia Correia- Lucas Freire- Leandro Silveira- Willian Antunes- Richard Biagi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conversamainproject/conversa/issues"
+  },
+  "homepage": "https://github.com/conversamainproject/conversa#readme"
+}
