@@ -27,14 +27,17 @@ registerButton.addEventListener('click', function(e){
 
     fetch('https://conversa-4d118.firebaseio.com/users.json', options)
         .then(response=>response.json())
-        .then(response=> console.log(response));
-
-    console.log(objectToSend);
+        .then(response=>{
+            alert('Registered successfuly');
+            console.log(response);
+        } 
+    );
 });
+
 
 loginButton.addEventListener('click', function(){
 
-    
+
     
     const options = {
     method:"post",
