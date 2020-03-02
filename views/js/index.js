@@ -8,6 +8,7 @@ const userEmailRegister = document.querySelector('#user-email-register');
 const userPasswordRegister = document.querySelector('#password-register');
 const agree = document.querySelector('#agreeCheckBox');
 
+//ADD NEW USER 
 registerButton.addEventListener('click', function(e){
     e.preventDefault();
 
@@ -34,11 +35,15 @@ registerButton.addEventListener('click', function(e){
     );
 });
 
-
+////I dont know if this is working
 loginButton.addEventListener('click', function(){
+    e.preventDefault();
 
+    const objectToSend = {
 
-    
+        "email": String.value,
+        "password": String.value
+    };
     const options = {
     method:"post",
     body: JSON.stringify(objectToSend),

@@ -22,6 +22,14 @@ const showIndexFile = function (request, response){
 
 app.get('/', showIndexFile);
 
+// SHOWS THE USER PAGE
+app.get("./views/:id", function(req, res){
+    //find the user with provided ID
+    //render show template with that user
+    res.send("THIS WILL BE THE SHOW PAGE ONE DAY!");
+
+})
+
 
 
 app.listen(3000, function(){
