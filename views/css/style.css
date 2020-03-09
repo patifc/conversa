@@ -1,62 +1,148 @@
 
 * {
     text-decoration: none;
+    box-sizing: border-box;
 
 }
 
 body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+}
+
+/*HEADER AND NAVIGATION BAR -----------------------*/
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 79px;
+    background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li{
+  display: inline-block;
+  margin: 1em;
+}
+
+nav a{
+    font-family: Catamaran;
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+nav a :hover, :focus{
+    color: #FE7E2A;
+}
+
+@media (min-width: 10rem){
+    .logo{
+        margin: 1em;
+        float: left;
+        height: 55px;
+    }
+    
+    nav {
+        float: right;
+    }
+}
+
+/*LOGIN AND SIGNUP BUTTONS --------------------------*/
+
+.login-btn{
+    top: 28px;
+    right: 10px;
+    position:absolute;
+    text-decoration: none;
+    color: darkorange;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+}
+
+.login-btn span{
+    display: block;
+    padding: 5px 15px;
+}
+
+.signup-btn{
+    top: 28px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: darkorange;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.signup-btn span{
+    display: block;
+    padding: 5px 15px;
+}
+
+.join-btn{
+    font-size: 1.5rem;
+    display:inline-block;
+    text-decoration: none;
+    color: darkorange;
+    border-style: solid;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+ .join-btn :hover :focus{
+    background-color: #FE7E2A;
+    color: white;
     
 }
-header{
-    width: 100%;
-    height: 100px;
-     background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
-}
-header .header-brand{
-    font-family: Catamaran;
-    font-size: 24px;
-    font-weight: 900;
-    color: #111;
-    text-transform: uppercase;
+
+ .join-btn span{
     display: block;
-    margin: 0 auto;
-    text-align:left;
-    padding: 20px 0;
+    padding: 5px 15px;
+}
 
+@media (min-width: 60rem) {
+    .join-button {
+        font-size: 1.5rem;
+    }
 }
-header .header-brand img{
-     width: 60px;
-     margin-bottom: 4px;
-     text-align:left;
+/*HOME HERO AREA --------------------------*/
 
-}
-header nav ul{
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-
-}
-header nav li{
-  display: inline-block;
-  float: left;
-  list-style: none;
-  padding: 0 16px;
-}
-header nav li a{
-     font-family: Catamaran;
-    font-size: 16px;
-    font-weight: 100px;
-    color: #111;
-
-}
-.home-banner{
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url('../img/people.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+.home-hero{
+    background-image: url(../img/people.jpg);
     background-size: cover;
+    background-position: center;
+    padding: 10em 0;
+    color: #fff;
 }
+
+@media(min-width: 60rem) {
+    .home-hero{
+        height: 100vh;
+        padding-top: 35vh;
+    }
+}
+
 .home-links div {
     margin: 16px 16px 0;
     width: calc(100% - 32px);
@@ -73,74 +159,6 @@ header nav li a{
     text-shadow: 2px 2px 8px #111;
 }
 
-.login-btn{
-    top: 40px;
-    right: 200px;
-    position:absolute;
-    text-decoration: none;
-    color: darkorange;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
-    background-origin: border-box;
-    background-clip: content-box, border-box; 
-}
-
-.login-btn span{
-    display: block;
-    padding: 6px 10px;
-}
-
-.signup-btn{
-    top: 40px;
-    right: 80px;
-    position: absolute;
-    text-decoration: none;
-    color: darkorange;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-
-.signup-btn span{
-    display: block;
-    padding: 6px 10px;
-}
-
-
-.join-btn:hover{
-    background-color: #FE7E2A;
-    color: white;
-    
-}
-
-
-.join-btn-box{
-    width: 50%;
-    height: 20%;
-    top: 80%;
-    float:center;
-
-}
-.join-btn{
-    font-size: 20px;
-    padding: 10px 30px;
-    left: 0;
-    position: center;
-    background-color: white;
-    color: darkorange;
-    text-decoration: none;
-    border: 2px solid #FE7E2A;
-    border-radius: 20px;
-    display:inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    transition-duration: 0.4s;
-
-}
-
 	.button-box{
 
 		width: 220px;
@@ -151,44 +169,6 @@ header nav li a{
     }
     
 
-.login-btn{
-    top: 40px;
-    right: 200px;
-    position: absolute;
-    text-decoration: none;
-    color: darkorange;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
-    background-origin: border-box;
-    background-clip: content-box, border-box; 
-}
-
-
-.login-btn span{
-    display: block;
-    padding: 6px 20px;
-}
-
-
-
-.signup-btn{
-    top: 40px;
-    right: 80px;
-    position: absolute;
-    text-decoration: none;
-    color: darkorange;
-    border: 2px solid transparent;
-    border-radius: 20px;
-    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-}
-.signup-btn span{
-    display: block;
-    padding: 6px 20px;
-
-}
 .menu ul li{
     list-style: none;
     margin: 0 10px;
@@ -196,10 +176,7 @@ header nav li a{
     cursor: pointer;
 
 }
-.logo img{
-    width: 150px;
-    
-}
+
 
 .active{
     color: darkorange !important; 
