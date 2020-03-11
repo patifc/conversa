@@ -336,10 +336,23 @@ position: absolute;
     padding: .5em 1.75em;
 
 }
+/*HEAD*/
 @media(min-width: 60rem){
     .button{
         font-size: 1.5rem;
     }
+/*five images countainer*/
+.about-gallery .column-about {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.about-gallery .row-about::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 /*Events*/
 
