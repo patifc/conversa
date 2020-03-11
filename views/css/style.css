@@ -15,11 +15,14 @@ body {
     font-family: sans-serif;
     text-align: center;
 }
+ img {
 
-img {
-    max-width: 85%;
-    height: auto;
+    max-width: 100%;
+    height:auto;
+
 }
+
+
 
 .container{
     width: 95%;
@@ -161,7 +164,7 @@ nav a :hover, :focus{
     padding: 5px 15px;
 }
 
-.join-btn{
+.join-btn {
     font-size: 1.5rem;
     display:inline-block;
     text-decoration: none;
@@ -174,13 +177,13 @@ nav a :hover, :focus{
     background-clip: content-box, border-box;
 }
 
- .join-btn :hover :focus{
+ .join-btn :hover, :focus {
     background-color: #FE7E2A;
     color: white;
     
 }
 
- .join-btn span{
+ .join-btn span {
     display: block;
     padding: 5px 15px;
 }
@@ -385,20 +388,8 @@ bottom: 68px;
 position: absolute;
 
 }
-.button {
-    display: inline-block;
-    font-size: 1.15rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-style: solid;
-    padding: .5em 1.75em;
 
-}
 /*HEAD*/
-@media(min-width: 60rem){
-    .button{
-        font-size: 1.5rem;
-    }
 /*five images countainer*/
 .about-gallery .column-about {
   float: left;
@@ -412,25 +403,57 @@ position: absolute;
   clear: both;
   display: table;
 }
-/*Events*/
 
 
+
+/***********Events*******************/
+
+
+.button {
+    display: inline-block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-style: solid;
+    padding: .5em 1.75em;
+
+}
+@media(min-width: 60rem){
+    .button{
+        font-size: 1.5rem;
+    }
+}
+.button-small{
+    font-size: .7rem;
+    font-weight: 700;
+}
+.button-accent{
+    color:#FE7E2A;
+    border-color:#FE7E2A;
+}
+.button-accent:hover,
+.button-accent:focus{
+    background: #FE7E2A;
+    color:#232323;
+
+}
 .events-links{
-    margin: 0;
+    margin: 3em 0;
 
 }
 .event-item{
     margin:0;
     position: relative;
 }
-.event-item img{
+
+ .event-item img {
 
     max-width: 100%;
     height:auto;
+    display:block;
+
 
 }
-
-
 
 .event-desc{
     position: absolute;
@@ -475,24 +498,8 @@ position: absolute;
   text-transform: uppercase;
 }
 
-.button-small{
-    font-size: .7rem;
-    font-weight: 700;
-}
-.button-accent{
-    color:#FE7E2A;
-    border-color:#FE7E2A;
-}
-.button-accent:hover,
-.button-accent:focus{
-    background: #FE7E2A;
-    color:#232323;
 
-}
-
-
-
-/*Event 1*/
+/*Event 1 page */
 .event article h3{
     font-family: Catamaran;
     font-size: 28px;
@@ -512,6 +519,4 @@ position: absolute;
     column-gap: 30px;
 }
 
-     
-
-
+}
