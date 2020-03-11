@@ -2,6 +2,7 @@
 * {
     text-decoration: none;
     box-sizing: border-box;
+    transition: all ease-in-out;
 
 }
 
@@ -325,37 +326,101 @@ font-size: 12px;
 bottom: 68px;
 position: absolute;
 
+}
+.button {
+    display: inline-block;
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-style: solid;
+    padding: .5em 1.75em;
 
+}
+@media(min-width: 60rem){
+    .button{
+        font-size: 1.5rem;
+    }
 }
 /*Events*/
-.events-links .events-link {
-    float: left;
-    width: 230px;
-    height: 230px;
-    margin: 20px 10px 0px;
-    background-color: #e3e3e3;
+
+
+.events-links{
+    margin: 0;
 
 }
-.events-links  {
-   overflow: hidden;
-   margin-bottom: 20px;
+.event-item{
+    margin:0;
+    position: relative;
 }
+.event-item img{
+
+    max-width: 100%;
+    height:auto;
+
+}
+
+
+
+.event-desc{
+    position: absolute;
+    z-index: 100;
+    bottom: 0em;
+    left:0em;
+    right:0em;
+    color:white;
+    background: rgba(0,0,0,.6);
+    padding-bottom: 2em;
+
+}
+.event-desc p{
+    margin:1em;
+}
+@media(min-width: 37rem){
+    .event-item{
+        width:50%;
+        float:left;
+    }
+
+}
+@media(min-width: 60rem){
+    .event-item{
+        width:33.3333334%;
+        overflow: hidden;
+    
+    }
+    .event-desc{
+        transform: translateY(150%);
+    }
+    .event-item:hover .event-desc{
+        transform:translateY(0%);
+    }
+}
+
 .events-links h2 {
   font-family: Catamaram;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   color: #111;
   text-transform: uppercase;
 }
-.events-links .events-link p {
-  padding-top: 40%;
-  font-family: Catamaran;
-  font-size: 24px;
-  font-weight: 600;
-  color: #111;
-  text-align: center;
-  text-transform: uppercase;
+
+.button-small{
+    font-size: .7rem;
+    font-weight: 700;
 }
+.button-accent{
+    color:#FE7E2A;
+    border-color:#FE7E2A;
+}
+.button-accent:hover,
+.button-accent:focus{
+    background: #FE7E2A;
+    color:#232323;
+
+}
+
+
+
 /*Event 1*/
 .event article h3{
     font-family: Catamaran;
