@@ -6,7 +6,7 @@
 }
 
 main{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 body {
@@ -18,6 +18,60 @@ body {
 img {
     max-width: 85%;
     height: auto;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.clearfix::after,
+section::after,
+footer::after{
+    content: '';
+    display:block;
+    clear:both;
+}
+
+/*COLUMN SYSTEM -----------------------*/
+
+[class^=col-]{
+    width: 100%;
+    margin-top: 1em;
+}
+
+[class^=col-]:first-child{
+    margin-top: 0;
+}   
+
+.col-1{
+    width: 33.33334%;
+    float: left;
+}
+
+@media(min-width: 40rem){
+    
+    [class^=col-]{
+        float: left;
+        padding: 0 .5em;
+        margin-top: 0;
+    }
+    
+    [class^=col-]:first-child{
+        padding-left: 0;
+    }   
+
+    [class^=col-]:last-child{
+        padding-right: 0;
+    }
+    
+    .col-3{
+        width: 50%;
+    }
+
+    .col-1{
+        width: 16.6666%;
+    }
 }
 
 /*HEADER AND NAVIGATION BAR -----------------------*/
@@ -152,6 +206,22 @@ nav a :hover, :focus{
     }
 }
 
+/* FOOTER AREA -----------------------*/
+
+footer{
+    background: #c3c4c1;
+    color: #fff;
+    text-align: left;
+    padding: 5em 0;
+}
+
+.unstyled-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
 .home-links div {
     margin: 16px 16px 0;
     width: calc(100% - 32px);
@@ -269,19 +339,7 @@ p{
 
 
 	}
-    .social-icons{
-		
-		margin:30px auto;
-		text-align:center;
-	}
-	.social-icons img{
-
-	width:30px;	
-	margin: 0 12px;
-	box-shadow: 0 0 20px 0 #7f7f7f3d;
-	cursor : pointer;
-	border-radius: 20px;
-}
+    
 .input-group{
 
 	top: 180px;
@@ -376,38 +434,6 @@ position: absolute;
     column-gap: 30px;
 }
 
-/*FOOTER*/
-    footer{
-        width: calc(100% -80px);
-        padding: 40px 40px;
-        margin-top: 20px;
-       background-color: #FE7E2A, #ffffff;
-       overflow: hidden;
-    }
-     footer ul {
-         width: fit-content;
-         float: left;
-         scroll-padding-left: 20px;
-    }
-    footer ul li {
-        display: block;
-        list-style: none;        
-    }
-    footer ul li a {
-        font-family: Catamaran;
-        font-size: 24px;
-        line-height:  40px;
-          
-    }
-    .footer-social  {
-        width: 50px;
-        float: right;
-    }
-     .footer-social img {
-         width: 100px;
-         margin-bottom: 10px;
-
-     }
      
 
 
