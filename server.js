@@ -11,7 +11,7 @@ app.use(cors());
 
 
 const showIndexFile = function (request, response){
-    const html    = fs.readFileSync('./views/index.html', 'utf-8');
+    const html    = fs.readFileSync('./views/home.html', 'utf-8');
     const headers = {
         "Content-Type": "text/html"
     };
