@@ -362,30 +362,6 @@ p{
 	outline: none;
 	background: transparent;
 
-}
-/* codigo antigo */
-.submit-btn{
-width: 85%;
-padding: 10px 30px;
-cursor: pointer;
-display: block;
-margin: auto;
-background:linear-gradient(to right, #ff105f,#ffad06) ;;
-border:0;
-outline: none;
-border-radius: 20px; 
-
-}
-.check-box{
-	margin: 30px 10px 30px 0 ;
-
-
-}
-.span{
-color: #777;
-font-size: 12px;
-bottom: 68px;
-position: absolute;
 
 }
 
@@ -535,4 +511,35 @@ position: absolute;
     column-count: 3;
     column-gap: 30px;
 }
+
+/*LOGIN PAGE********/
+
+*{
+    box-sizing: border-box;
+    outline: none!important;
+}
+.login-page{
+    background-image:('../img/logo.png');
+    background-size: cover;
+    height:100vh;
+}
+.login-page .box{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+
+}
+.login-page .box .form-head h2{
+
+}
+.login-page .box .form-body{
+
+}
+.login-page.box .form-footer{
+
+}
+
 

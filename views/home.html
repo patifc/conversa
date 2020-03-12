@@ -7,72 +7,27 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
+    <section class="login-page">
         <header>
             <img src="img/logo-conversa.png" alt="Conversa Logo" class="logo">
-            <nav>
-            <!--<nav class="menu">-->
-                <ul>
-                    <li><a href="index.html"><span>Home</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
-                    <li><a href="about.html"><span>About</span></a></li>
-                </ul>
-                
-                </nav>
+         <form>
+         <div class="box">
+         <div class="form-head">
+         <h2> Member Login </h2>
+         </div>
+         <div class="form-body">
+         <input type="text" placeholder=" Enter email">
+         <input type="password" placeholder=" Enter Password">
+         </div>
+         <div class="form-footer">
+         <button type="submit"> Sign In </button>
+         </div>
+         </div>
+       </form>
+        </section>
         </header>
-        <div class="hero">
-        
-            <div class="form-box">
-                <div class="button-box"> 
-                    <div id="btn"> </div> 
-                        <button type="button" class="toggle-btn" onclick="login()" >Log in</button>	
-                        <button type="button" class="toggle-btn" onclick="register()">Register</button>	
-                </div>
-                
-                <div class="social-icons"> 
-                     <a href="https://www.facebook.com/conversa.cct/">
-                        <img src="../img/fb.png" alt="facebook icon">
-                    </a>
-                     <a href="https://www.instagram.com/conversa_cct/">
-                        <img src="../img/gp.png" alt="google icon">
-                    </a>
-                     <a href="#">
-                        <img src="../img/tw.png" alt="twiter icon">
-                    </a>
-                </div>
-                <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="UserId"required id="user-id-login">
-                    <input type="text" class="input-field" placeholder="Enter Password"required id="password-login">
-                    <input type="checkbox" class="check-box">
-                    <span>Remember Password</span>
-                    <button type="submit" class="submit-btn" id="login-login">Login</button>
-                </form>
-                <form id="register" class="input-group">
-                    <input type="text" class="input-field" placeholder="UserId"required id="user-id-register">
-                    <input type="email" class="input-field" placeholder="Email Id"required id="user-email-register">
-                    <input type="text" class="input-field" placeholder="Enter Password" required id="password-register">
-                    <input type="checkbox" class="check-box" id="agreeCheckBox"><span>agree to the terms & conditions</span>
-                    <button type="submit" class="submit-btn" id="register-register">Register</button>
-                </form>
-            </div>
-        </div>
+       
                     
-        <script >
-            var	x = document.getElementById("login");
-            var	y = document.getElementById("register");
-            var	z = document.getElementById("btn");
-                        
-            function register (){
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
-            }
-            function login (){
-                x.style.left = "50px";
-                y.style.left = "450px";
-                z.style.left = "0";
-            }
-
-        </script>
 
         <footer>
             <div class="container">
