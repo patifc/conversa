@@ -8,71 +8,94 @@
     </head>
     <body>
         <header>
-            <img src="img/logo-conversa.png" alt="Conversa Logo" class="logo">
+            <a href="index.html">
+                <img src="img/logo-conversa.png" alt="Conversa Logo" class="logo">
+            </a>
             <nav>
-            <!--<nav class="menu">-->
                 <ul>
-                    <li><a href="home.html"><span>Home</span></a></li>
-                    <li><a href="#"><span>Contact</span></a></li>
-                    <li><a href="about.html"><span>About</span></a></li>
+                    <li>
+                        <a href="index.html" class="login-btn"><span>Login</span></a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="signup-btn"><span>Sign Up</span></a>
+                    </li>
+    
                 </ul>
-                
-                </nav>
+            </nav> 
+      
         </header>
-        <div class="hero">
-        
-            <div class="form-box">
-                <div class="button-box"> 
-                    <div id="btn"> </div> 
-                        <button type="button" class="toggle-btn" onclick="login()" >Log in</button>	
-                        <button type="button" class="toggle-btn" onclick="register()">Register</button>	
-                </div>
-                
-                <div class="social-icons"> 
-                     <a href="https://www.facebook.com/conversa.cct/">
-                        <img src="../img/fb.png" alt="facebook icon">
-                    </a>
-                     <a href="https://www.instagram.com/conversa_cct/">
-                        <img src="../img/gp.png" alt="google icon">
-                    </a>
-                     <a href="#">
-                        <img src="../img/tw.png" alt="twiter icon">
-                    </a>
-                </div>
-                <form id="login" class="input-group">
-                    <input type="text" class="input-field" placeholder="UserId"required id="user-id-login">
-                    <input type="text" class="input-field" placeholder="Enter Password"required id="password-login">
-                    <input type="checkbox" class="check-box">
-                    <span>Remember Password</span>
-                    <button type="submit" class="submit-btn" id="login-login">Login</button>
-                </form>
-                <form id="register" class="input-group">
-                    <input type="text" class="input-field" placeholder="UserId"required id="user-id-register">
-                    <input type="email" class="input-field" placeholder="Email Id"required id="user-email-register">
-                    <input type="text" class="input-field" placeholder="Enter Password" required id="password-register">
-                    <input type="checkbox" class="check-box" id="agreeCheckBox"><span>agree to the terms & conditions</span>
-                    <button type="submit" class="submit-btn" id="register-register">Register</button>
-                </form>
-            </div>
-        </div>
-                    
-        <script >
-            var	x = document.getElementById("login");
-            var	y = document.getElementById("register");
-            var	z = document.getElementById("btn");
-                        
-            function register (){
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
-            }
-            function login (){
-                x.style.left = "50px";
-                y.style.left = "450px";
-                z.style.left = "0";
-            }
+        <main>
+            <section class="home-hero">
+                <a href="index.html" class="join-btn"><span>Join Us!</span></a>
+            </section>
+                      
+         <section class="events-links">
+           <h2>Conversa Events</h2>
+           
+          <!--event item 01 -->
+           <figure class="event-item">
+           <img src="../img/business.png" alt="event item">
+           <figcaption class="event-desc">
+            <p>Let's talk business</p>
+            <a href="event1.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
 
-        </script>
+            <!--event item 02 -->
+           <figure class="event-item">
+           <img src="../img/iloveyou.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>I love you</p>
+            <a href="event2.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
+
+            <!--event item 03 -->
+           <figure class="event-item">
+           <img src="../img/technology.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Have you try turn on and off?</p>
+            <a href="event3.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
+        
+               <!--event item 04 -->
+           <figure class="event-item">
+           <img src="../img/music.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Can you sing?</p>
+            <a href="event4.html" class="button button-accent button-small"> Conversa details</a> 
+           </figcaption>
+           </figure>   
+
+            <!--event item 05 -->
+           <figure class="event-item">
+           <img src="../img/food.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Do you know your favority dish?</p>
+            <a href="event5.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>  
+
+            <!--event item 06 -->
+           <figure class="event-item">
+           <img src="../img/beer.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Let's just talk!</p>
+            <a href="event6.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>    
+        </section>
+
+        <section class="cta">
+	<div class="container">
+		<h1 class="title title-cta">Want to be part of this community?
+			 <span>Then what are you waiting for?</span>
+		</h1>
+		<a href="" class="button button-dark">Join us</a>
+	</div>
+</section>
+        </main>
 
         <footer>
             <div class="container">
@@ -91,7 +114,7 @@
                 <div class="col-1">
                     <ul class="unstyled-list">
                         <li><strong>Conversa</strong></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
@@ -99,7 +122,7 @@
                 <div class="col-1">
                     <ul class="unstyled-list">
                         <li><strong>Events</strong></li>
-                        <li><a href="events.html">Find an event</a></li>
+                        <li><a href="#">Find an event</a></li>
                     </ul>
                 </div>
                 <div class="col-1">
