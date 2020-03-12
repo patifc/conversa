@@ -31,7 +31,7 @@ body {
 
 .clearfix::after,
 section::after,
-.footer::after{
+footer::after{
     content: '';
     display:block;
     clear:both;
@@ -59,6 +59,7 @@ section::after,
         float: left;
         padding: 0 .5em;
         margin-top: 0;
+        color: black;
     }
     
     [class^=col-]:first-child{
@@ -75,6 +76,10 @@ section::after,
 
     .col-1{
         width: 16.6666%;
+    }
+
+    .col-1 ul li{
+        margin-bottom: .5rem;
     }
 }
 
@@ -225,6 +230,15 @@ footer{
     list-style-type: none;
 }
 
+.social-icon{
+    width: 10%;
+    padding-left: .5rem
+}
+
+h3{
+    padding-left: .5rem;
+    margin-top: 0;
+}
 
 .home-links div {
     margin: 16px 16px 0;
