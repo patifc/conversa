@@ -133,6 +133,22 @@ nav a :hover, :focus{
 
 /*LOGIN AND SIGNUP BUTTONS --------------------------*/
 
+.start-btn{
+    top: 28px;
+    right: 130px;
+    position:absolute;
+    text-decoration: none;
+    color: darkorange;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+}
+.start-btn span{
+    display: block;
+    padding: 5px 5px;
+}
 .login-btn{
     top: 28px;
     right: 10px;
@@ -148,12 +164,17 @@ nav a :hover, :focus{
 
 .login-btn span{
     display: block;
-    padding: 5px 15px;
+    padding: 5px 5px;
+}
+.login-btn :hover, :focus {
+    color: white;
+     background-color:darkorange;
+     border-radius: 20px;
 }
 
 .signup-btn{
     top: 28px;
-    right: 80px;
+    right: 65px;
     position: absolute;
     text-decoration: none;
     color: darkorange;
@@ -166,7 +187,12 @@ nav a :hover, :focus{
 
 .signup-btn span{
     display: block;
-    padding: 5px 15px;
+    padding: 5px 5px;
+}
+.signup-btn :hover, :focus {
+    color: white;
+     background-color:darkorange;
+     border-radius: 20px;
 }
 
 .join-btn {
@@ -180,11 +206,13 @@ nav a :hover, :focus{
     background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
     background-origin: border-box;
     background-clip: content-box, border-box;
+    position:relative;
 }
 
  .join-btn :hover, :focus {
-    background-color: #FE7E2A;
     color: white;
+     background-color:darkorange;
+     border-radius: 20px;
     
 }
 
@@ -262,7 +290,7 @@ h3{
 		margin: 3px auto;
 		position: center;
 		box-shadow: 0 0 20px 9px #ff61241f;
-		border-radius: 30px;
+		border-radius: 20px;
     }
     
 
@@ -335,7 +363,7 @@ p{
 		margin: 3px auto;
 		position: relative;
 		box-shadow: 0 0 20px 9px #ff61241f;
-		border-radius: 30px;
+		border-radius: 20px;
 	}
     .toggle-btn{
 		padding: 10px 30px;
@@ -378,7 +406,7 @@ p{
 
 
 }
-
+/*ABOUT US PAGE ****//////
 /*HEAD*/
 /*five images countainer*/
 .about-gallery .column-about {
@@ -413,6 +441,7 @@ p{
         font-size: 1.5rem;
     }
 }
+
 .button-small{
     font-size: .7rem;
     font-weight: 700;
@@ -596,7 +625,7 @@ p{
     border-radius: 20px;
     padding: 0px 50px;
     color:#ffffff;
-    background-color:#f44336;
+    background-color:#FE7E2A;
     border: none;
     cursor: pointer;
     transition: box-shadow .5s ease;
@@ -606,5 +635,111 @@ p{
     box-shadow: 0px 0px, 10px black;
 
 }
+/*SIGN UP PAGE*****/
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+
+}
+.wrapper .title h2{
+    font-size:24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: rgba(254, 127, 42, 0.712);
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.wrapper .form{
+    width: 100%;
+
+}
+.wrapper .form .input-field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input-field label{
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+
+}
+.wrapper .form .input-field .input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.wrapper .form .input-field .input:focus,
+.wrapper .form .input-field .textarea:focus{
+    border: 1px solid #fec107;
+}
+.wrapper .form .input-field p{
+    font-size: 14px;
+    color: #757575;
+}
+.wrapper .form .input-field .check{
+    width:  15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+
+}
+.wrapper .form .input-field .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; 
+}
+.wrapper .form .input-field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FE7E2A;
+    display: block;
+    position : relative;
+    
+
+}
+.wrapper .form .input-field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color:transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+.wrapper .form .input-field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: #FE7E2A;
+}
+.wrapper .form .input-field .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+}
+.wrapper .form .input-field .button{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: #FE7E2A;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
 
 
+
+}
