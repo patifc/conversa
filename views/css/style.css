@@ -430,6 +430,7 @@ p{
 .button-dark{
     color:#232323;
     border-color:#FE7E2A;
+    border-radius: 20px
 }
 .button-dark:hover,
 .button-dark:focus{
