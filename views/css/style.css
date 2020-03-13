@@ -406,24 +406,6 @@ p{
 
 
 }
-/*ABOUT US PAGE ****//////
-/*HEAD*/
-/*five images countainer*/
-.about-gallery .column-about {
-  float: left;
-  width: 20%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.about-gallery .row-about::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-
-
 /***********Events*******************/
 
 
@@ -556,6 +538,86 @@ p{
     column-gap: 30px;
 }
 
+
+/*about us page - team conversa ****/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    }
+    .team-section{
+        overflow: hidden;
+        text-align: center;
+        background :#FE7E2A;
+	    padding: 5em 0; 
+    }
+    .team-section h1{
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        color: white;
+        font-size: 40px;
+    }
+    .border{
+        display: block;
+        margin: auto;
+        width: 160px;
+        height: 3px;
+        background :#FE7E2A;
+        margin-bottom: 40px;
+    }
+    .tc{
+        margin-bottom: 40px;
+    }
+    .tc a{
+        display: inline-block;
+        margin: 0 30px;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .tc img{
+        width: 100%;
+        filter: grayscale(100%);
+        transition: 0.4s all;
+    }
+    .tc a:hover > img{
+        filter: none;
+    }
+    .team-section2{
+        width: 600px;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+        text-align: justify;
+        height: 0;
+        overflow: hidden;
+    }
+    .team-section2:target{
+        height: auto;
+    }
+    .name{
+        display: block;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+/*about us page - team conversa end ****/
+/*about us page - first Content ****/
+.firstContent {
+	background-image: radial-gradient(circle at top left, #ffffff, rgb(42, 151, 254) );
+	padding: 5em 0;
+}
+.fContent{
+        width: 600px;
+        margin: auto;
+        font-size: 20px;
+        color: white;
+        text-align: justify;
+    }
+/*about us page - first Content end ****/
+
 /*LOGIN PAGE********/
 
 *{
@@ -635,7 +697,6 @@ p{
 
 }
 /*SIGN UP PAGE*****/
-
 
 .wrapper{
     position: relative;
@@ -767,3 +828,4 @@ p{
    flex-direction:row ;
 }
 }
+
