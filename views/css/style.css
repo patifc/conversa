@@ -22,7 +22,9 @@ body {
 
 }
 
-
+a{
+    color: inherit;
+}
 
 .container{
     width: 95%;
@@ -93,7 +95,7 @@ header{
     width: 100%;
     height: 79px;
     background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
-
+    z-index: 9;
     
 }
 
@@ -459,6 +461,8 @@ p{
 .event-item{
     margin:0;
     position: relative;
+    border-radius: 30px;
+
 }
 
  .event-item img {
