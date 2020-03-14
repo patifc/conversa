@@ -37,7 +37,7 @@ footer::after{
     clear:both;
 }
 
-/*COLUMN SYSTEM -----------------------*/
+/*COLUMN SYSTEM FOR THE FOOTER-----------------------*/
 
 [class^=col-]{
     width: 100%;
@@ -196,6 +196,7 @@ nav a :hover, :focus{
 }
 
 .join-btn {
+    top: 130px;
     font-size: 1.5rem;
     display:inline-block;
     text-decoration: none;
@@ -206,7 +207,7 @@ nav a :hover, :focus{
     background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #FE7E2A, #ffffff);
     background-origin: border-box;
     background-clip: content-box, border-box;
-    position:relative;
+    position: relative;
 }
 
  .join-btn :hover, :focus {
@@ -223,6 +224,7 @@ nav a :hover, :focus{
 
 @media (min-width: 60rem) {
     .join-button {
+        
         font-size: 1.5rem;
     }
 }
@@ -247,7 +249,7 @@ nav a :hover, :focus{
 
 footer{
     background: #c3c4c1;
-    color: #fff;
+    color: black;
     text-align: left;
     padding: 5em 0;
 }
@@ -265,6 +267,7 @@ footer{
 
 h3{
     padding-left: .5rem;
+    padding-bottom: .5rem;
     margin-top: 0;
 }
 
@@ -700,10 +703,11 @@ p{
 
 .wrapper{
     position: relative;
-    max-width: 500px;
-    width: 100%;
+    top: 80px;
+    max-width: 400px;
+    width: 90%;
     background: #fff;
-    margin: 20px auto;
+    margin: auto;
     padding: 30px;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
 
@@ -722,7 +726,7 @@ p{
 
 }
 .wrapper .form .input-field{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
 }
