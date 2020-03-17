@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Conversa</title>
+        <title>Conversa</title>        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
@@ -28,7 +28,6 @@
         </header>
         <main>
         <section class="event">
-          <div class="wrapper">
            <h2>English for Business</h2>
            <img src="../img/business.png" alt="business">
            <article>
@@ -38,12 +37,31 @@
             Fluency in English, both written and spoken plays a critical role in many aspects of corporate life from securing employment to communicating with clientele 
            and achieving cohesive business partnerships all over the world.
            Be part of this comunity!</p>
-                    
-                     </div>
-             <section class="home-links">
-                 <section class="home-links">
-                 <a href="#" class="button button-accent join-btn"> Check Location</a>
-                 <a href="index.html" class="button button-accent join-btn"> Home </a>
+         </div>
+
+       
+        <div class="map">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDy-gIfrmkG0e0z7WTBqJv0Zdp2u7hc0b4'>
+        </script>
+        <div id='gmap_canvas' style='height:400px;width:520px;'>
+        </div>
+        </div> <a href='http://maps-generator.com/'>maps-generator.com</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=161416622327ceee96ded8eed02df9589f2b474b'>
+        </script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(53,-8),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(53,-8)
+        });infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br> <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        
+         </div>
+
+         <div class="attends">
+         <h1></h1>
+         </div>
+
+         <div class="similar-events">
+         </div>
+        
+        <div class="input-field button">      
+        <button onclick="location.href='#'" class="button">Attend</button>
+         <button onclick="location.href='index.html'" class="button">Home</button>
+         </div>
            </div>
            </article>
         </section>
