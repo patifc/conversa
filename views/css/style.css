@@ -533,6 +533,7 @@ p{
     color: #111;
     text-transform : uppercase;
     padding-bottom: 60px;
+    text-align: center;
 }
 .event article div p{
     font-family: Catamaran;
@@ -542,14 +543,19 @@ p{
     color: #111;
     text-transform : uppercase;
     column-gap: 30px;
+    text-align: center;
 }
 .map{
-    position:relative;
+    padding: 10em 0;
+    color: #fff;
+    background-size: contain;
 }
-#gmap_canvas img{
-    max-width:none!important;
-    background:none!important
-    }
+@media only screen and (min-width: 400px){
+
+  }
+  
+
+
 
   
     
