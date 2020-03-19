@@ -476,7 +476,7 @@ p{
 
 .event-desc{
     position: absolute;
-    z-index: 100;
+    z-index: 8;
     bottom: 0em;
     left:0em;
     right:0em;
@@ -537,6 +537,7 @@ p{
   float: left;
   padding: 50px;
   box-sizing: border-box;
+  
 
   }
   .leftBox .content{
@@ -559,6 +560,7 @@ p{
      padding: 0;
 
 }
+
  .events{
        position: relative;
        width: 50%;
