@@ -2,77 +2,89 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Conversa</title>        
+        <title>Registration Form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
         <header>
-            <a href="index.html">
-                <img src="img/logo-conversa.png" alt="Conversa Logo" class="logo">
-            </a>
+         <a href="index.html">
+            <img src="img/logo-conversa.png" alt="Conversa Logo" class="logo">
             <nav>
                 <ul>
                     <li>
-                    <a href="index.html" class="start-btn"><span>Home</span></a>
-                    </li>
                         <a href="login.html" class="login-btn"><span>Login</span></a>
                     </li>
-                    <li>
-                        <a href="signup.html" class="signup-btn"><span>Sign Up</span></a>
-                    </li>
-    
                 </ul>
             </nav> 
-      
-        </header>
-         <section class="event2">
-        <div class="leftBox">
-           <div class="content">
-             <h1>English for Business</h1>
-             <img src="../img/business.png" alt="business" class="business">
-           <p> shashjasjsakjahskjdahskdjas
-           sbdabsdjabsdjasbdkasbdkjasbjdka
-           Be part of this comunity!</p>       
+    </header>
+    
+    <div class="wrapper">
+    <div class="title"> 
+    <h2>Create a new Conversa</h2>
          </div>
-    </div>
-    <div class="events">
-            <ul>
-               <li>
-          <div class="time">
-            <h2>02<br><span>Abril</span></h2>
-          </div>
-          <div class="details">
-            <h3>Why go to this Conversa</h3>
-            <p>sahdhasdkasdbkasdkasjhdkja
-             askdaksdkjasdkjsadkjashdkajs
-            sadksadkjashdkjashdkjashdjksh</p>
-            <a href="popup.html">View Details</a>
-            <a href="new.html">Create new</a>
-         </div>
-         <div style="clear:both;"></div>
-           </li>
 
-            <li>
-          <div class="time">
-            <h2>0<br><span>Month</span></h2>
-          </div>
-          <div class="details">
-            <h3>Why go to this Conversa</h3>
-            <p> Create a Conversa</p>
-            <a href="popup.html">View Details</a>
-            <a href="new">Create new</a>
+         <div class="form">
+         <div class="input-field">
+         <label> Full Name</label>
+         <input type ="text" class ="input">
          </div>
-         <div style="clear:both;"></div>
-           </li>
-               </div>
-          </ul>
-             </div>
-                </div>
-             </div>
-           </div>
-        </section>
-      
+
+          <div class="input-field">
+         <label> Email address</label>
+         <input type ="text" class ="input">
+         </div>
+
+          <div class="input-field">
+         <label> Password</label>
+         <input type ="text" class ="input">
+         </div>
+
+          <div class="input-field">
+         <label> Student number</label>
+         <input type ="text" class ="input">
+         </div>
+
+          <div class="input-field">
+         <label> Address of the event</label>
+         <textarea class="textarea"></textarea>
+         </div>
+
+          <div class="input-field">
+         <label> About Event</label>
+         <textarea class="textarea"></textarea>
+         </div>
+
+          <div class="input-field">
+         <label> Postal Code</label>
+         <input type ="text" class ="input">
+         </div>
+
+        
+         <div class="input-field">
+         <label> Cost</label>
+         <div class="custom-select"></div>
+         <select>
+         <option value="">Select</option>
+         <option value="free" class="">Free</option>
+         <option value="pay" class="">Pay in</option>
+         </select>
+         </div>
+
+          <div class="input-field terms">
+         <label class="check">
+         <input type ="checkbox">
+         <span class="checkmark"></span>
+         </label>
+         <p> Agreed to terms and conditions</p>
+         </div>
+
+         <div class="input-field button">      
+        <button onclick="location.href='login.html'" class="button">Submit</button>
+         </div>
+         </div>  
+    </div>
+                  
 
         <footer>
             <div class="container">
@@ -99,7 +111,7 @@
                 <div class="col-1">
                     <ul class="unstyled-list">
                         <li><strong>Events</strong></li>
-                        <li><a href="index.html">Find an event</a></li>
+                        <li><a href="#">Find an event</a></li>
                     </ul>
                 </div>
                 <div class="col-1">
