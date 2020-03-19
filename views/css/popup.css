@@ -102,12 +102,20 @@ body{
     pointer-events: auto;
 }
 
+<<<<<<< HEAD
 .modal_container > div{
+=======
+.modal_container  div{
+>>>>>>> 3b5ce21aac7b71d9a5aea8ae3e465b095a54dd9d
     transform: translate(0px, -50px);
 	transition: all 500ms ease;
 }
 
+<<<<<<< HEAD
 .modal_container:target > div{
+=======
+.modal_container:target  div{
+>>>>>>> 3b5ce21aac7b71d9a5aea8ae3e465b095a54dd9d
     transform: translate(0px, 0px);
 }
 

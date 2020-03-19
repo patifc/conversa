@@ -476,7 +476,7 @@ p{
 
 .event-desc{
     position: absolute;
-    z-index: 100;
+    z-index: 8;
     bottom: 0em;
     left:0em;
     right:0em;
@@ -523,38 +523,195 @@ p{
 	background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
 	padding: 5em 0;
 }
+  /*EVENT1,2,3,4*/
 
-
-/*Event 1 page */
-.event article h3{
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 600;
-    color: #111;
-    text-transform : uppercase;
-    padding-bottom: 60px;
-    text-align: center;
-}
-.event article div p{
-    font-family: Catamaran;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #111;
-    text-transform : uppercase;
-    column-gap: 30px;
-    text-align: center;
-}
-.map{
-    padding: 10em 0;
-    color: #fff;
-    background-size: contain;
-}
-@media only screen and (min-width: 400px){
-
+  .event2{
+  width: 100%;
+  height: 100vh;
+ 
   }
+
+  .leftBox{
+  width: 50%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
   
 
+  }
+  .leftBox .content{
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      padding: 40px;
+      transition: .5s;
+  }
+  .leftBox .content:hover{
+    background:rgb(42, 151, 254);
+  }
+   .leftBox .content h1{
+       margin:0;
+       padding:0;
+       font-size:50px;
+       text-transform: uppercase;
+}
+.leftBox .content p{
+     margin: 10px 0 0;
+     padding: 0;
+
+}
+
+ .events{
+       position: relative;
+       width: 50%;
+       height: 100%;
+       background: rgba(0,0,0,.5);
+       float: right;
+       box-sizing: border-box;
+    
+}
+ .events ul{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+        padding: 40px;
+        box-sizing: border-box;
+}
+    .events ul li{
+        list-style: none;
+        background: #fff;
+        box-sizing: border-box;
+        height: 200px;
+        margin: 15px 0;
+
+}
+    .events ul li .time{
+        position: relative;
+        padding: 20px;
+        background: #262626;
+        box-sizing: border-box;
+        width: 30%;
+        height: 100%;
+        float: left;
+        text-align:center;
+        transition: .5s;
+}
+.events ul li:hover .time{
+background:rgb(42, 151, 254);
+
+}
+.events ul li .time h2{
+    position: absolute;
+    margin:0;
+    padding: 0;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#fff;
+    font-size:60px;
+    line-height: 30px;
+
+}
+.events ul li .time h2 span{
+    font-size:30px;
+}
+.events ul li .details{
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float:left;
+}
+.events ul li .details h3{
+    position: relative;
+    margin:0;
+    padding:0;
+    font-size: 22px;
+
+}
+.events ul li .details p{
+    position: relative;
+    margin: 10px 0 0;
+    padding:0;
+    font-size: 16px;
+}
+.events ul li .details a {
+   display: inline-block;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 5px 10px;
+   border: 2px solid #262626;
+   margin-top: 15px;
+   font-size: 18px;
+   transition: .5s;
+   border-radius: 20px;
+   
+}
+.events ul li .details a:hover{
+    background:rgb(42, 151, 254);
+    color: #fff;
+    border-color:rgb(42, 151, 254);
+}
+@media (max-width: 991px){
+    .event2{
+     height:100%;
+     background-position: center;
+    }
+    .leftBox{
+      width: 100%;
+      height: auto;
+      float: none;
+      padding: 20px;  
+    }
+    .events{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .leftBox .content{
+        padding: 20px;
+    }
+     .leftBox .content h1{
+         font-size: 30px;
+     }
+    .events ul{
+        position:relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    .events ul li{
+        height: auto;
+        background: rgba(255,255,255,.9);
+        
+    }
+     .events ul li .time{
+         width: 80px;
+         height: 80px;
+         padding: 0;
+     }
+      .events ul li .time h2{
+          font-size: 30px;
+          line-height: 24px;
+      }
+       .events ul li .time h2 span{
+           font-size: 20px;
+       }
+        .events ul li .details{
+            width:100%;
+            float: none;
+            padding-left: 100px;
+            background: transparent;
+        }
+         .events ul li .details a{
+             padding: 5px 10px;
+         }
+         .events ul li .details p{
+             text-align: center;
+             font-size: 14px;
+         }
+}
 
 
   
@@ -600,7 +757,7 @@ p{
         filter: grayscale(100%);
         transition: 0.4s all;
     }
-    .tc a:hover > img{
+    .tc a:hover  img{
         filter: none;
     }
     .team-section2{
@@ -903,7 +1060,7 @@ p{
     text-align: center;
 
 }
-.wrapper .form{
+.wrapper .form {
     width: 100%;
 
 }
