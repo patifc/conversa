@@ -523,42 +523,12 @@ p{
 	background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
 	padding: 5em 0;
 }
-
-
-/*Event 1 page */
-.event article h3{
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 600;
-    color: #111;
-    text-transform : uppercase;
-    padding-bottom: 60px;
-    text-align: center;
-}
-.event article div p{
-    font-family: Catamaran;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #111;
-    text-transform : uppercase;
-    column-gap: 30px;
-    text-align: center;
-}
-.map{
-    padding: 10em 0;
-    color: #fff;
-    background-size: contain;
-}
-@media only screen and (min-width: 400px){
-
-  }
-  /*EVENT2*/
+  /*EVENT1,2,3,4*/
 
   .event2{
   width: 100%;
   height: 100vh;
-  background-size: cover;
+ 
   }
 
   .leftBox{
@@ -657,6 +627,7 @@ background:rgb(42, 151, 254);
     margin:0;
     padding:0;
     font-size: 22px;
+
 }
 .events ul li .details p{
     position: relative;
@@ -668,18 +639,77 @@ background:rgb(42, 151, 254);
    display: inline-block;
    text-decoration: none;
    text-transform: uppercase;
-   padding: 10px 15px;
+   padding: 5px 10px;
    border: 2px solid #262626;
    margin-top: 15px;
    font-size: 18px;
    transition: .5s;
+   border-radius: 20px;
+   
 }
 .events ul li .details a:hover{
     background:rgb(42, 151, 254);
     color: #fff;
     border-color:rgb(42, 151, 254);
 }
-
+@media (max-width: 991px){
+    .event2{
+     height:100%;
+     background-position: center;
+    }
+    .leftBox{
+      width: 100%;
+      height: auto;
+      float: none;
+      padding: 20px;  
+    }
+    .events{
+        width: 100%;
+        height: auto;
+        float: none;
+    }
+    .leftBox .content{
+        padding: 20px;
+    }
+     .leftBox .content h1{
+         font-size: 30px;
+     }
+    .events ul{
+        position:relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    .events ul li{
+        height: auto;
+        background: rgba(255,255,255,.9);
+        
+    }
+     .events ul li .time{
+         width: 80px;
+         height: 80px;
+         padding: 0;
+     }
+      .events ul li .time h2{
+          font-size: 30px;
+          line-height: 24px;
+      }
+       .events ul li .time h2 span{
+           font-size: 20px;
+       }
+        .events ul li .details{
+            width:100%;
+            float: none;
+            padding-left: 100px;
+            background: transparent;
+        }
+         .events ul li .details a{
+             padding: 5px 10px;
+         }
+         .events ul li .details p{
+             text-align: center;
+             font-size: 14px;
+         }
+}
 
 
   
