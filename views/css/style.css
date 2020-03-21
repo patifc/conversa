@@ -782,7 +782,7 @@ background:rgb(42, 151, 254);
 /*about us page - team conversa end ****/
 /*about us page - first Content ****/
 .firstContent {
-	background-image: radial-gradient(circle at top left, #ffffff, rgb(42, 151, 254) );
+	background-image: radial-gradient(circle at top left, #ffffff, rgb(6, 57, 104) );
 	padding: 5em 0;
 }
 .fContent{
@@ -794,7 +794,10 @@ background:rgb(42, 151, 254);
 }
 /*about us page - first Content end ****/
 /*about us page - fade picture ****/
-
+.cards {
+    background-image: radial-gradient(circle at top left, #ffffff, rgb(204, 12, 12) );
+	padding: 5em 0;
+}
 .middle-pic .images{
     display: flex;
     justify-content: space-around;
@@ -897,7 +900,7 @@ background:rgb(42, 151, 254);
 
 .card__front {
     background: var(--clr);
-    background-image: url=();
+    background-image: url(../img/pessoas1.png);
     background-size: cover;
     background-blend-mode: overlay;
     color: #333;
@@ -957,6 +960,11 @@ background:rgb(42, 151, 254);
 .card__back{
     transform:rotateY(.5turn);
     background: var(--clr);
+    background: var(--clr);
+    background-image: url(../img/pessoas2.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
 }
 /*LOGIN PAGE********/
 
