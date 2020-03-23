@@ -1,5 +1,3 @@
-
-
 const registerButton = document.querySelector('#register-register');
 const loginButton = document.querySelector('#login-login');
 
@@ -34,6 +32,8 @@ registerButton.addEventListener('click', function(e){
         } 
     );
 });
+
+
 
 ////I dont know if this is working
 loginButton.addEventListener('click', function(){
