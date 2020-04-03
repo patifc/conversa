@@ -2,12 +2,14 @@
 
 <the project description goes here>
 
-Built With
+<h3>Built With </h3>
+
  .HTML
  .CSS
  .JavaScript
 
-Authors
+<h3>Authors</3>
+
 .Leandro
 .Lucas
 .Patricia 
