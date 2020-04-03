@@ -253,7 +253,7 @@ footer{
     background: #c3c4c1;
     color: black;
     text-align: left;
-    padding: 5em 0;
+    padding: 1em 0;
 }
 
 .unstyled-list{
@@ -263,7 +263,7 @@ footer{
 }
 
 .social-icon{
-    width: 10%;
+    width: 6.5%;
     padding-left: .5rem
 }
 
