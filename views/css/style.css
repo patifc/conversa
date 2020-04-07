@@ -1241,7 +1241,7 @@ background:rgb(42, 151, 254);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 .blogBody {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/notebook.jpg);
+    background-image: linear-gradient(rgba(235, 65, 13, 0.767), rgba(212, 207, 192, 0.767)), url(../img/backblog1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
