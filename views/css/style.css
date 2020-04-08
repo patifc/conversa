@@ -87,50 +87,114 @@ footer::after{
 
 /*HEADER AND NAVIGATION BAR -----------------------*/
 
-header{
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
     position: fixed; /* header will not move when we scroll down*/
-    top:0;
-    right:0;
-    left:0;
     width: 100%;
-    height: 79px;
+    height: 80px;
     background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
     z-index: 9;
     
 }
 
-nav ul{
-    margin: 0;
-    padding: 0;
+
+.logo{
+    margin: 1em;
+    float: left;
+    max-width: 200px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li{
     list-style: none;
-
 }
 
-nav li{
-  display: inline-block;
-  margin: 1em;
-}
-
-nav a{
-    font-family: Catamaran;
+.nav-links a{
+    color: #FFF;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #FFF;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
 nav a :hover, :focus{
     color: #FE7E2A;
 }
 
-@media (min-width: 10rem){
-    .logo{
-        margin: 1em;
-        float: left;
-        height: 55px;
+@media screen and (max-width: 1024px){
+    .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 12vh;
+        background-image: radial-gradient(circle at top left, #ffffff, #FE7E2A );
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.65s ease-in;
     }
     
-    nav {
-        float: right;
+    .burger{
+        display: block;
     }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+    
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
 }
 
 /*LOGIN AND SIGNUP BUTTONS --------------------------*/
