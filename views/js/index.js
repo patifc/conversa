@@ -45,7 +45,7 @@ loginButton.addEventListener('click', function(){
         "password": String.value
     };
     const options = {
-    method:"post",
+    method:"get",
     body: JSON.stringify(objectToSend),
     headers: {
         "Content-Type":"application/json; charset=utf-8"

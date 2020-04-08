@@ -545,10 +545,8 @@ p{
       background: rgba(0,0,0,.5);
       padding: 40px;
       transition: .5s;
-  }
-  .leftBox .content:hover{
-    background:rgb(42, 151, 254);
-  }
+ 
+ }
    .leftBox .content h1{
        margin:0;
        padding:0;
