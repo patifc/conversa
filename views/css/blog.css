@@ -1,0 +1,40 @@
+/*blog*******/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+
+body {
+    background-image: linear-gradient(rgba(236, 85, 15, 0.849), rgba(168, 94, 33, 0.849)), url(../img/backblog1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 20px;
+    width: 80%;
+    border: 20px solid #2370a5;
+    font-family: source sans Pro, sans-serif;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+}
+.blog .date{
+    color: #fff;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.paragraph{
+    border-left: 5px solid #2370a5;
+    padding-left: 5px;
+}
+ hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.blog p{
+    color: #fff;
+    font-weight: 600;
+}
+.blog .date h2{
+    color: #fff;
+    font-weight: 600;
+}

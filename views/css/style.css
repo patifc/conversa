@@ -253,7 +253,7 @@ footer{
     background: #c3c4c1;
     color: black;
     text-align: left;
-    padding: 5em 0;
+    padding: 1em 0;
 }
 
 .unstyled-list{
@@ -263,7 +263,7 @@ footer{
 }
 
 .social-icon{
-    width: 10%;
+    width: 6.5%;
     padding-left: .5rem
 }
 
@@ -1241,7 +1241,7 @@ background:rgb(42, 151, 254);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 .blogBody {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/notebook.jpg);
+    background-image: linear-gradient(rgba(235, 65, 13, 0.767), rgba(212, 207, 192, 0.767)), url(../img/backblog1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1279,4 +1279,12 @@ background:rgb(42, 151, 254);
 .blog .date h2{
     color: #fff;
     font-weight: 600;
+}
+
+/*contact .......*/
+.cont .contact-section{
+    background-image: url(../img/backblog.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+
 }
