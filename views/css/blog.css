@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 body {
-    background-image: linear-gradient(rgba(236, 85, 15, 0.849), rgba(168, 94, 33, 0.849)), url(../img/backblog1.png);
+    background-image: linear-gradient(rgba(248, 83, 7, 0.733), rgba(247, 208, 178, 0.966)), url(../img/backblog1.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
