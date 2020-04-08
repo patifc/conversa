@@ -806,7 +806,7 @@ background:rgb(42, 151, 254);
 }
 .login-page:after{
     content:'';
-    position: absolute;S
+    position: absolute;
     left: 0px;
     top: 0px;
     height: 100%;
