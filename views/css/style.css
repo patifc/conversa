@@ -107,7 +107,7 @@ nav a :hover, :focus{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 512px){
     
     body{
         overflow-x: hidden;
@@ -115,8 +115,8 @@ nav a :hover, :focus{
     .nav-links{
         position: absolute;
         right: 0px;
-        height: 87vh;
-        top: 10vh;
+        height: 91vh;
+        top: 9.5vh;
         background-image: radial-gradient(circle at left, #ffffff, #FE7E2A );
         flex-direction: column;
         align-items: center;
@@ -228,8 +228,8 @@ nav a :hover, :focus{
 }
 
 .join-btn {
-    top: 230px;
-    font-size: 1.5rem;
+    top: 30vh;
+    font-size: 2rem;
     display:inline-block;
     text-decoration: none;
     color: darkorange;
@@ -253,11 +253,17 @@ nav a :hover, :focus{
     display: block;
     padding: 5px 15px;
 }
+@media screen and (max-width: 1152px) {
+    .join-btn {
+        top: 40vh;
+        font-size: 2rem;
+    }
+}
 
-@media (min-width: 60rem) {
-    .join-button {
-        top: 30px;
-        font-size: 1.5rem;
+@media screen and (max-width: 964px) {
+    .join-btn {
+        top: 13vh;
+        font-size: 1rem;
     }
 }
 /*END OF START AND JOIN BUTTONS --------------*/
@@ -321,6 +327,8 @@ h3{
     text-align: center;
     text-shadow: 2px 2px 8px #111;
 }
+
+/*END OF FOOTER AREA --------------------*/
 
 	.button-box{
 
