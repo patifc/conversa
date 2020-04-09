@@ -5,6 +5,7 @@
         <title>Conversa</title>        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/modal.css" type="text/css">
     </head>
     <body>
         <nav>
@@ -27,66 +28,78 @@
                 <div class="line3"></div>
             </div>
         </nav>
-         <section class="event2">
-        <div class="leftBox">
-           <div class="content">
-             <h1>Can you Sing?</h1>
-             <img src="../img/music.jpg" alt="business" class="business">
-           <p> shashjasjsakjahskjdahskdjas
-           sbdabsdjabsdjasbdkasbdkjasbjdka
-           Be part of this comunity!</p>       
-         </div>
-    </div>
-    <div class="events">
-            <ul>
-               <li>
-          <div class="time">
-            <h2>02<br><span>Abril</span></h2>
-          </div>
-          <div class="details">
-            <h3>Why go to this Conversa</h3>
-            <p>sahdhasdkasdbkasdkasjhdkja
-             askdaksdkjasdkjsadkjashdkajs
-            sadksadkjashdkjashdkjashdjksh</p>
-            <a href="popup.html">View Details</a>
-            <a href="new.html">Create new</a>
-         </div>
-         <div style="clear:both;"></div>
-           </li>
-              
-               
-             <li>
-          <div class="time">
-            <h2>02<br><span>Abril</span></h2>
-          </div>
-          <div class="details">
-            <h3>Why go to this Conversa</h3>
-            <p>sahdhasdkasdbkasdkasjhdkja
-             askdaksdkjasdkjsadkjashdkajs
-            sadksadkjashdkjashdkjashdjksh</p>
-            <a href="popup.html">View Details</a>
-            <a href="new.html">Create new</a>
-         </div>
-         <div style="clear:both;"></div>
-           </li>
-               </ul>
-         <div class="similar-events">
-         </div>
-        
-        <div class="input-field button">      
-        <button onclick="location.href='popup.html'" class="button">Attend</button>
-         <button onclick="location.href='index.html'" class="button">Home</button>
-         </div>
-         <div style="clear:both;"></div>
-           </li>
-               </div>
-        
-             </div>
+
+        <!-- modal -->
+        <div class="pure-modal">
+            <input id="modal-trigger-center" class="checkbox" type="checkbox">
+            <div class="pure-modal-overlay">
+                <label for="modal-trigger-center" class="o-close"></label>
+                <div class="pure-modal-wrap a-center">
+                    <label for="modal-trigger-center" class="close">&#10006;</label>
+                    <h2>You need to login!</h2>
+                    <p>This session is for members only!</p>
+                    <button class="register">
+                        <a href="login.html" class="loginLink">Login</a>
+                    </button>
+                    <button class="register">
+                        <a href="signup.html" class="registerLink">Register now</a>
+                    </button>
                 </div>
-             </div>
-           </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+
+        <section class="event2">
+            <div class="leftBox">
+                <div class="content">
+                    <h1>Can you Sing?</h1>
+                    <img src="../img/music.jpg" alt="business" class="business">
+                    <p> shashjasjsakjahskjdahskdjas
+                        sbdabsdjabsdjasbdkasbdkjasbjdka
+                        Be part of this comunity!</p>       
+                </div>
+            </div>
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="time">
+                            <h2>02<br><span>Abril</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Why go to this Conversa</h3>
+                            <p>sahdhasdkasdbkasdkasjhdkja
+                                askdaksdkjasdkjsadkjashdkajs
+                                sadksadkjashdkjashdkjashdjksh</p>
+                            <label for="modal-trigger-center" class="open-modal">View Details</label>
+                            <a href="new.html">Create new</a>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+               
+                    <li>
+                        <div class="time">
+                            <h2>02<br><span>Abril</span></h2>
+                        </div>
+                        <div class="details">
+                            <h3>Why go to this Conversa</h3>
+                            <p>sahdhasdkasdbkasdkasjhdkja
+                                askdaksdkjasdkjsadkjashdkajs
+                                sadksadkjashdkjashdkjashdjksh</p>
+                            <label for="modal-trigger-center" class="open-modal">View Details</label>
+                            <a href="new.html">Create new</a>
+                        </div>
+                        <div style="clear:both;"></div>
+                    </li>
+                </ul>
+                <div class="similar-events">
+                </div>
+                <div class="input-field">      
+                    <label for="modal-trigger-center" class="open-modal">Attend</label>
+                    <button onclick="location.href='index.html'" class="button">Home</button>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
         </section>
-      
 
         <footer>
             <div class="container">
