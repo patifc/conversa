@@ -12,8 +12,12 @@ main{
 
 body {
     margin: 0;
+    padding: 0;
     font-family: sans-serif;
     text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
  img {
 
@@ -228,7 +232,7 @@ nav a :hover, :focus{
 }
 
 .join-btn {
-    top: 30vh;
+    top: 37vh;
     font-size: 2rem;
     display:inline-block;
     text-decoration: none;
@@ -293,6 +297,8 @@ footer{
     color: black;
     text-align: left;
     padding: 1em 0;
+    width: 100%;
+    bottom: 0;
 }
 
 .unstyled-list{
@@ -865,7 +871,7 @@ background:rgb(42, 151, 254);
     outline: none !important;
 }
 .login-page{
-     background-image: url(../img/backblog.png);
+    background-image: url(../img/backblog.png);
     background-size: cover;
     height:100vh;
     position: relative;
@@ -953,18 +959,22 @@ background:rgb(42, 151, 254);
 
 /*SIGN UP PAGE*****/
 
+.signup-page{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .wrapper{
     max-width:500px;
-    position: relative;
-    top: 60px;
-    bottom:0;
+    position: static;
+    padding-top: 60px;
     width: 100%;
     background: #fff;
-    margin: 20px auto;
+    margin: 100px auto 20px auto;
     padding: 30px;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-    margin-bottom: 10px;
-
+    
 }
 .wrapper .title h2 {
     font-size:24px;
