@@ -5,8 +5,7 @@
         <title>Conversa</title>        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css" type="text/css">
-        <link rel="stylesheet" href="css/modal.css" type="text/css">
-             
+        
     </head>
     <body>
         <nav>
@@ -31,19 +30,19 @@
         </nav>
 
         <!-- modal -->
-        <div class="pure-modal">
-            <input id="modal-trigger-center" class="checkbox" type="checkbox">
-            <div class="pure-modal-overlay">
-                <label for="modal-trigger-center" class="o-close"></label>
-                <div class="pure-modal-wrap a-center">
-                    <label for="modal-trigger-center" class="close">&#10006;</label>
+        <div class="member-only-modal">
+            <input id="member-only-modal-trigger-center" class="checkbox" type="checkbox">
+            <div class="member-only-modal-overlay">
+                <label for="member-only-modal-trigger-center" class="o-close"></label>
+                <div class="member-only-modal-wrap a-center">
+                    <label for="member-only-modal-trigger-center" class="close">&#10006;</label>
                     <h2>You need to login!</h2>
                     <p>This session is for members only!</p>
-                    <button class="register">
-                        <a href="login.html" class="loginLink">Login</a>
+                    <button class="member-only-modal-register">
+                        <a href="login.html" class="member-only-modal-loginLink">Login</a>
                     </button>
-                    <button class="register">
-                        <a href="signup.html" class="registerLink">Register now</a>
+                    <button class="member-only-modal-register">
+                        <a href="signup.html" class="member-only-modal-registerLink">Register now</a>
                     </button>
                 </div>
             </div>
@@ -70,7 +69,7 @@
                             <h3>Why try this Conversa</h3>
                             <p>This is for the tech community:
                             all you need to know in tech English.</p>
-                            <label for="modal-trigger-center" class="open-modal">View Details</label>
+                            <label for="member-only-modal-trigger-center" class="open-modal">View Details</label>
                             <a href="new.html">Create new</a>
                         </div>
                         <div style="clear:both;"></div>
@@ -83,7 +82,7 @@
                         <div class="details">
                             <h3>Why try this Conversa</h3>
                             <p> Languages? Here we speak Java, Python, C# and... ENGLISH!</p>
-                            <label for="modal-trigger-center" class="open-modal">View Details</label>
+                            <label for="member-only-modal-trigger-center" class="open-modal">View Details</label>
                             <a href="new.html">Create new</a>
                         </div>
                         <div style="clear:both;"></div>
@@ -92,7 +91,7 @@
                 <div class="similar-events">
                 </div>
                 <div class="input-field">      
-                    <label for="modal-trigger-center" class="open-modal">Attend</label>
+                    <label for="member-only-modal-trigger-center" class="open-modal">Attend</label>
                     <button onclick="location.href='index.html'" class="button">Home</button>
                 </div>
                 <div style="clear:both;"></div>
