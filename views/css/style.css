@@ -312,7 +312,7 @@ footer{
     padding-left: .5rem
 }
 
-h3{
+footer .container .col-3 h3{
     padding-left: .5rem;
     padding-bottom: .5rem;
     margin-top: 0;
@@ -490,17 +490,7 @@ p{
     color:#232323;
 
 }
-.button-dark{
-    color:#232323;
-    border-color:#FE7E2A;
-    border-radius: 20px
-}
-.button-dark:hover,
-.button-dark:focus{
-    background: #FE7E2A;
-    color:#232323;
 
-}
 .events-links{
     margin: 3em 0 0;
 
@@ -604,6 +594,18 @@ p{
 .leftBox .content p{
      margin: 10px 0 0;
      padding: 0;
+
+}
+
+.button-dark{
+    color:#232323;
+    border-color:#FE7E2A;
+    border-radius: 20px
+}
+.button-dark:hover,
+.button-dark:focus{
+    background: #FE7E2A;
+    color:#232323;
 
 }
 
@@ -725,6 +727,9 @@ background:rgb(42, 151, 254);
      height:100%;
      background-position: center;
     }
+    .button-dark{
+    font-size: .9rem;
+}
     .leftBox{
       width: 100%;
       height: auto;
@@ -784,14 +789,233 @@ background:rgb(42, 151, 254);
          }
 }
 
+/*about us page - first Content ****/
+.firstContent {
+	background-image: radial-gradient(circle at top left, #ffffff, rgb(6, 57, 104) );
+	padding: 5em 0;
+}
+.fContent{
+    width: 750px;
+    height: 330px;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
 
-  
-/*about us page - team conversa ****/
-*{
+.about-btn{
+    color:#232323;
+    border-color:#FE7E2A;
+    border-radius: 20px;
+    top:30px;
+    position: relative;
+}
+.about-btn:hover,
+.about-btn:focus{
+    background: #FE7E2A;
+    color:#232323;
+}
+
+/* Tablet size */
+@media (max-width: 800px)
+{
+  .fContent{
+      width: 100%;
+  }
+
+  .firstContent .fContent h3{
+      padding: 0 20px 0 20px;
+  }
+}
+
+/* Phone size */
+@media (max-width: 500px)
+{
+  .fContent{
+      width: 100%;
+  }
+}
+
+/*about us page - first Content end ****/
+
+/*about us page - fade picture ****/
+
+.middle-pic .images{
+    display: flex;
+    justify-content: space-around;
+}
+.image-container{
+    height: 500px;
+    width: 800px;
+    position: relative;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.fade::after{
+    content: "If you want to have a honest and fair conversation in the language you are learning, without the inconvinience of having someone correcting your speaking mistaskes, but being able to speak using what you have learned with someone else who wants to do the same.";
+    color:white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fade1::after{
+    content: "Then you have just find the best tool too help you!";
+    color:white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 20px;
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fade:hover::after,
+.fade1:hover::after {
+    opacity: 0.5;
+}
+
+/*about us page - fade picture end ****/
+
+/*about us page - flipping card***/
+:root{
+    --level-one: translateZ(3rem);
+    --level-two: translateZ(6rem);
+    --level-three: translateZ(9rem);
+
+    --fw-normal:400;
+    --fw-bold:700;
+
+    --clr: #b7c9e5;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    }
+}
+
+.cards {
+    background-image: radial-gradient(circle at top left, #ffffff, rgb(204, 12, 12) );
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.card{
+    width: 400px;
+}
+
+.card__content{
+    text-align: center;
+    position: relative;
+    top: -45px;
+    padding:5em;
+    transition: transform 3s;
+    background:pink;
+    transform-style: preserve-3d;
+}
+.card:hover .card__content{
+    transform:rotateY(.5turn);
+}
+.card__front,
+.card__back{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+}
+
+.card__front {
+    background: var(--clr);
+    background-image: url(../img/pessoas1.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+
+.card__front::before {
+    content:'';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid black;
+    transform: var(--level-one);
+}
+.card__back::before {
+    content:'';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid black;
+    transform: var(--level-one);
+}
+.card__content::before {
+    content:'';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: var(--level-one);
+}
+.card__title{
+    font-size: 3.5rem;
+    transform: var(--level-three);
+    order:2;
+    text-transform: uppercase;
+}
+
+.card__subtitle {
+    transform: var(--level-two);
+    text-transform: uppercase;
+    letter-spacing:4px;
+    font-size: .75rem;
+    font-weight: var(--fw--bold);
+    opacity: .7;
+}
+.card__cards {
+    transform: var(--level-two);
+    font-weight: var(fw-normal);
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+.card__back{
+    transform:rotateY(.5turn);
+    background: var(--clr);
+    background: var(--clr);
+    background-image: url(../img/pessoas2.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+/*about us page Flipping card end******/
+
+/*about us page - team conversa ****/
+
     .team-section{
         overflow: hidden;
         text-align: center;
@@ -851,19 +1075,6 @@ background:rgb(42, 151, 254);
         font-size: 22px;
     }
 /*about us page - team conversa end ****/
-/*about us page - first Content ****/
-.firstContent {
-	background-image: radial-gradient(circle at top left, #ffffff, rgb(6, 57, 104) );
-	padding: 5em 0;
-}
-.fContent{
-        width: 600px;
-        margin: auto;
-        font-size: 20px;
-        color: white;
-        text-align: justify;
-}
-/*about us page - first Content end ****/
 
 /*LOGIN PAGE********/
 
@@ -1075,8 +1286,6 @@ background:rgb(42, 151, 254);
     color: white;
      background-color:darkorange;
      display: block;
-     
-     
 }
 .wrapper .form .input-field:last-child{
     margin-bottom: 0;
@@ -1086,16 +1295,16 @@ background:rgb(42, 151, 254);
 }
 @media (max-width: 420px){
     .wrapper .form .input-field{
-   flex-direction: column;
-   align-items: flex-start;
-}
-.wrapper .form .input-field label{
-    margin-bottom: 5px;
-   
-}
-.wrapper .form .input-field .terms{
-   flex-direction:row ;
-}
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .wrapper .form .input-field label{
+        margin-bottom: 5px;
+    
+    }
+    .wrapper .form .input-field .terms{
+    flex-direction:row ;
+    }
 }
  /* user page */
 
@@ -1151,182 +1360,6 @@ background:rgb(42, 151, 254);
      display: block;
      
 }
-
-/*about us page - fade picture ****/
-.cards {
-    background-image: radial-gradient(circle at top left, #ffffff, rgb(204, 12, 12) );
-	padding: 5em 0;
-}
-.middle-pic .images{
-    display: flex;
-    justify-content: space-around;
-}
-.image-container{
-    height: 500px;
-    width: 800px;
-    position: relative;
-}
-.image-container img{
-    width: 100%;
-    height: 100%;
-}
-.fade::after{
-    content: "If you want to have a honest and fair conversation in the language you are learning, without the inconvinience of having someone correcting your speaking mistaskes, but being able to speak using what you have learned with someone else who wants to do the same.";
-    color:white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 20px;
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-.fade1::after{
-    content: "then you have just find the best tool too help you!";
-    color:white;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    font-size: 20px;
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-.fade:hover::after,
-.fade1:hover::after {
-    opacity: 0.5;
-}
-
-/*about us page - fade picture end ****/
-/*about us page - flipping card***/
-:root{
-    --level-one: translateZ(3rem);
-    --level-two: translateZ(6rem);
-    --level-three: translateZ(9rem);
-
-    --fw-normal:400;
-    --fw-bold:700;
-
-    --clr: #b7c9e5;
-}
-*, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
-}
-.cards {
-    height: 100vh;
-    display: grid;
-    place-items: center;
-}
-.card{
-    width: 400px;
-}
-
-.card__content{
-    text-align: center;
-    position: relative;
-    padding:5em;
-    transition: transform 3s;
-    background:pink;
-    transform-style: preserve-3d;
-}
-.card:hover .card__content{
-    transform:rotateY(.5turn);
-}
-.card__front,
-.card__back{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15em 3em;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    display: grid;
-    align-content: center;
-}
-
-.card__front {
-    background: var(--clr);
-    background-image: url(../img/pessoas1.png);
-    background-size: cover;
-    background-blend-mode: overlay;
-    color: #333;
-}
-
-.card__front::before {
-    content:'';
-    position: absolute;
-    --spacer: 1em;
-    top: var(--spacer);
-    left: var(--spacer);
-    right: var(--spacer);
-    border: 3px solid black;
-    transform: var(--level-one);
-}
-.card__back::before {
-    content:'';
-    position: absolute;
-    --spacer: 1em;
-    top: var(--spacer);
-    left: var(--spacer);
-    right: var(--spacer);
-    border: 3px solid black;
-    transform: var(--level-one);
-}
-.card__content::before {
-    content:'';
-    position: absolute;
-    --spacer: 1em;
-    top: var(--spacer);
-    left: var(--spacer);
-    right: var(--spacer);
-    border: 3px solid currentColor;
-    transform: var(--level-one);
-}
-.card__title{
-    font-size: 3.5rem;
-    transform: var(--level-three);
-    order:2;
-    text-transform: uppercase;
-}
-
-.card__subtitle {
-    transform: var(--level-two);
-    text-transform: uppercase;
-    letter-spacing:4px;
-    font-size: .75rem;
-    font-weight: var(--fw--bold);
-    opacity: .7;
-}
-.card__cards {
-    transform: var(--level-two);
-    font-weight: var(fw-normal);
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-.card__back{
-    transform:rotateY(.5turn);
-    background: var(--clr);
-    background: var(--clr);
-    background-image: url(../img/pessoas2.png);
-    background-size: cover;
-    background-blend-mode: overlay;
-    color: #333;
-}
-/*about us page Flipping card end******/
-
 
 /*blog*******/
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
