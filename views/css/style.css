@@ -790,6 +790,14 @@ background:rgb(42, 151, 254);
 }
 
 /*about us page - first Content ****/
+@media(max-width:800px){
+    .firstContent{
+        width: 100%;
+    }
+    .fContent{
+        width: 100%;
+    }
+}
 .firstContent {
 	background-image: radial-gradient(circle at top left, #ffffff, rgb(6, 57, 104) );
 	padding: 5em 0;
