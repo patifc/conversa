@@ -1152,6 +1152,10 @@ background:rgb(42, 151, 254);
             width: 120px;
             height: 120px;
         }
+
+        .team-section2 p{
+            font-size: 2vw;
+        }
     }
 
     /* Phone size */
