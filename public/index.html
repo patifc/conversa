@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta name="theme-color" content= "#FFE1C4" />
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="manifest" href="manifest.json">
+        
+        <!----ios support-->
+        <link rel="apple-touch-icon" href="../icon/96x96.png">
+        <meta name=" apple-mobile-web-app-status-bar" content="#aa7700">
+
+    </head>
+    <body>
+        <nav>
+           <div class="logo">
+            <a href="index.html">
+                <img src="img/logo-conversa.png" alt="Conversa Logo">
+            </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="findevent.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Sign Up</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav> 
+        <main>
+            <section class="home-hero">
+                <a href="login.html" class="join-btn"><span>Join Us!</span></a>
+            </section>
+                      
+         <section class="events-links">
+           <h2>Conversa Events</h2>
+           <!--  the way img tags were before <img src="../img/business.png" alt="event item"> -->
+          <!--event item 01 -->
+           <figure class="event-item">
+           <img src="img/business.png" alt="event item">
+           <figcaption class="event-desc">
+            <p>Let's talk business</p>
+            <a href="event1.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
+
+            <!--event item 02 -->
+           <figure class="event-item">
+           <img src=" img/likeyou.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>We like you too!</p>
+            <a href="event2.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
+
+            <!--event item 03 -->
+           <figure class="event-item">
+           <img src="img/technology.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Have you try turn on and off?</p>
+            <a href="event3.html" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>
+        
+               <!--event item 04 -->
+           <figure class="event-item">
+           <img src="img/music.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Can you sing?</p>
+            <a href="event4.html" class="button button-accent button-small"> Conversa details</a> 
+           </figcaption>
+           </figure>   
+
+            <!--event item 05 -->
+           <figure class="event-item">
+           <img src="img/food.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Can you spell spinach</p>
+            <a href="#" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>  
+
+            <!--event item 06 -->
+           <figure class="event-item">
+           <img src="img/beer.jpg" alt="event item">
+           <figcaption class="event-desc">
+            <p>Let's just talk!</p>
+            <a href="#" class="button button-accent button-small"> Conversa details</a>
+           </figcaption>
+           </figure>    
+        </section>
+        <section class="cta">
+	<div class="container">
+		<h1 class="title title-cta">Want to be part of this community?
+			 <span>Then what are you waiting for?</span>
+		</h1>
+		<a href="login.html" class="button button-dark">Join us</a>
+	</div>
+</section>
+        </main>
+        <footer  class="grey lighten-2">
+            <div class="container">
+                <div class="col-3">
+                    <h3>Follow Us!</h3>
+                    <a href="https://www.facebook.com/conversa.cct/">
+                        <img src="img/facebook.png" alt="facebook icon" class="social-icon">
+                    </a>
+                    <a href="https://www.instagram.com/conversa_cct/">
+                        <img src="img/instagram.png" alt="instagram icon" class="social-icon">
+                    </a>
+                    <a href="blog.html">
+                        <img src="img/blogger.png" alt="blogger icon" class="social-icon">
+                    </a>
+                </div>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <li><strong>Conversa</strong></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="help.html">Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <li><strong>Events</strong></li>
+                        <li><a href="findevent.html">Find an event</a></li>
+                    </ul>
+                </div>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <li><strong>Your Account</strong></li>
+                        <li><a href="login.html"class="modal-trigger" data-target="modal-signup">Sign Up</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+                </div>    
+        </footer>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-functions.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBEKxerVpLKx3eXxDS7FlaOvAjB_8Uu6uY",
+    authDomain: "conversa-pwa.firebaseapp.com",
+    databaseURL: "https://conversa-pwa.firebaseio.com",
+    projectId: "conversa-pwa",
+    storageBucket: "conversa-pwa.appspot.com",
+    messagingSenderId: "1097798166799",
+    appId: "1:1097798166799:web:7978f9c719bf21264bf67a",
+    measurementId: "G-VQJ4NHET6V"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+  //make auth and firestone references
+  const auth = firebase.auth();
+  const functions = firebase.functions();
+</script>
+        <script src="js/conver.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/auth.js"></script>
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

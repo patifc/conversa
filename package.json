@@ -19,8 +19,14 @@
   },
   "homepage": "https://github.com/conversamainproject/conversa#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parse": "^0.1.0",
     "cors": "^2.8.5",
+    "couchbase": "^2.6.11",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2"
-  }
+    "nodemon": "^2.0.2",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {},
+  "keywords": []
 }

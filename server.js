@@ -1,4 +1,3 @@
-
 const express = require('express');
 const fs      = require('fs');
 const path    = require('path');
@@ -6,12 +5,12 @@ const cors    = require('cors');
 
 
 const app     = express();
-app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 
 const showIndexFile = function (request, response){
-    const html    = fs.readFileSync('./views/index.html', 'utf-8');
+    const html    = fs.readFileSync('./public/index.html', 'utf-8');
     const headers = {
         "Content-Type": "text/html"
     };
@@ -23,7 +22,7 @@ const showIndexFile = function (request, response){
 app.get('/', showIndexFile);
 
 // SHOWS THE USER PAGE
-app.get("./views/:id", function(req, res){
+app.get("./public/:id", function(req, res){
     //find the user with provided ID
     //render show template with that user
     res.send("THIS WILL BE THE SHOW PAGE ONE DAY!");
