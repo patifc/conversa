@@ -49,8 +49,8 @@ const setupConversas = (data) => {
    <div class ="collapsible-header grey lighten-4">${conversa.title}</div>
    <div class= "collapsible-body white">${conversa.content}
    <h4>Location:</h4>
-   <div class=" "collapsible-body white">${conversa.city}</div>
-   <button class="btn orange darken-2 z-depth-0">Attend</button></div
+   <div class= "collapsible-body white">${conversa.city}</div>
+
    
    
    </li>

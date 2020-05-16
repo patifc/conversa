@@ -73,7 +73,6 @@ signupForm.addEventListener('submit', (e) => {
     });
 });
 
-
 //logout
 const signOut = document.querySelector('#logout');
 logout.addEventListener('click', (e) => {
