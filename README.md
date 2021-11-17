@@ -2,6 +2,8 @@
 
 <the project description goes here>
 
+A responsive website fully operating! Full backend working with a server running and a database to save new users. Fronend is also looking sharp!
+Final project for the Bachelor of Information Technology at CCT Dublin. 
 <h2>Built With </h2>
 
  .HTML
