@@ -23,7 +23,7 @@
     "body-parse": "^0.1.0",
     "cors": "^2.8.5",
     "couchbase": "^2.6.11",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "nodemon": "^2.0.2",
     "uuid": "^7.0.3"
   },
